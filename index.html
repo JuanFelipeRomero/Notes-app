@@ -13,49 +13,28 @@
 
             <div class="welcome-container">
                 <h2 class="welcome-container__greet">Hola Juan</h2>
-                <p class="welcome-container_date">Abril 11 del año 2024</p>
+                <p class="welcome-container_date" id = "dateLabel">Abril 11 del año 2024</p>
             </div>
 
             <div class="input-section__input-container">
-                <input type="text" name="note" id="inputNote" class="input-container__input" placeholder="New note...">
+                <input type="text" name="note" id="inputNote" class="input-container__input" placeholder="Take a note...">
+                <textarea name="textarea" class="input-container__textarea" id="textarea" cols="30" rows="10" placeholder="Take a note..."></textarea>
+                <button class="input-container__addBtn" id="addBtn"><img src="/public/assets/logos/plusLogo.svg" alt=""></button>
             </div>
 
         </section>
 
         <section class="notes_section">
 
-            <div class="notes_section__notes-grid">
-
-                <div class="note">
-                    <h3 class="note__title">Title 1</h3>
-                    <p class="note__content">Content...</p>
-                </div>
-
-                <div class="note">
-                    <h3 class="note__title">Title 2</h3>
-                    <p class="note__content">Content...</p>
-                </div>
-
-                <div class="note">
-                    <h3 class="note__title">Title 3</h3>
-                    <p class="note__content">Content...</p>
-                </div>
-
-                <div class="note">
-                    <h3 class="note__title">Title 4</h3>
-                    <p class="note__content">Content...</p>
-                </div>
-
-
-
-
-         
-
+            <div class="notes_section__notes-grid" id = "notes_grid">
+                <!-- There, the notes are gonna be added-->
             </div>
 
         </section>
 
     </main>
+
+    <script src="/src/main.js"></script>
     
 </body>
 </html>
